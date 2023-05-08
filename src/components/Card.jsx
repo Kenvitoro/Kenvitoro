@@ -48,10 +48,10 @@ height: 270px;
 border-radius: 7px;
 display: flex;
 align-items: end;
-background-size: cover;
 overflow: hidden;
 box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5) inset;
 transition: transform 0.5s ease;
+position: relative;
 
 &:hover{
   transform: scale(1.05);
@@ -64,6 +64,12 @@ transition: transform 0.5s ease;
   transform: translateY(0);
   }
 }
+`
+const CardImg = styled.img`
+height: 100%;
+position: absolute;
+top: 0;
+object-fit: contain;
 `
 
 const SubTitle = styled.h3`
@@ -83,7 +89,8 @@ const Button = styled.div`
 
 export const Card = ({title, subTitle, description, image, address}) => {
   return (
-    <Cardd style={{backgroundImage: `url(${image})`}} >
+    <Cardd >
+        <CardImg src={image}/>
         <CardContainer>
             <Title>
             {title}

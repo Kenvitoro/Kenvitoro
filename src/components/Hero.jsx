@@ -1,17 +1,38 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
 import { Canvas } from '@react-three/fiber'
 import { MeshDistortMaterial, OrbitControls, Sphere } from '@react-three/drei'
 
 
 export const Hero = () => {
+
+  const ClickContact = () =>{
+    document.getElementById("Contact").scrollIntoView({ behavior: "smooth" })
+  }
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    const checkIfMobile = () => {
+      const isMobile = window.innerWidth <= 768; 
+      setIsMobile(isMobile);
+    };
+  
+    useEffect(() => {
+      checkIfMobile();
+      window.addEventListener('resize', checkIfMobile);
+  
+      return () => {
+        window.removeEventListener('resize', checkIfMobile);
+      };
+    }, []);
+
   return (
     <Section id="Hero">
         <Container>
             <Left>
                 <Title>Kenneth Mora Villatoro</Title>
                 <Subtitle>
-                    <Line src='/img/line.png'/>
+                    <Line src='./img/line.png'/>
                     <Tecnologies>
                     Desarrollador Web / Javascript / React / Css / Node 
                     </Tecnologies>
@@ -19,19 +40,21 @@ export const Hero = () => {
                 
                 <Description>Entusiasta de la programación y de todas sus ramificaciones, siempre en busca de nuevas oportunidades y retos.</Description>
                 
-                <Button>Contactame</Button>
+                <Button onClick={ClickContact}>Contactame</Button>
             </Left>
             <Right>
-                <Canvas>
-                    <OrbitControls enableZoom={false}/>
+            {isMobile ? <MovilShape /> 
+            : <Canvas>
+                    <OrbitControls enableZoom={false} />
                     <ambientLight intensity={1} />
                     <mesh>
                     <Sphere args={[1, 100, 200]} scale={1.9} >
                     <MeshDistortMaterial color="#4ea93b" attach="material" distort={0.5} speed={2}/>
                     </Sphere>
                     </mesh>
-                </Canvas>
-                <Img src="/img/dev.png"/>
+                </Canvas>}
+                
+                <Img src="./img/dev.png"/>
             </Right>
         </Container>
     </Section>
@@ -41,7 +64,30 @@ export const Hero = () => {
 
 
 
+const MovilShape = styled.div`
+background: linear-gradient(45deg, #4ea93b 0%, #4b7f18 100%);
+  animation: morph 8s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  max-height: 400px;
+  max-width: 400px;
+  min-height: 300px;
+  min-width: 300px;
+  transition: all 1s ease-in-out;
 
+  @keyframes morph {
+  0% {
+			border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+	} 
+	
+	50% {
+			border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+	}
+  
+	100% {
+		border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+	} 
+}
+`
 
 
 const Section = styled.div`

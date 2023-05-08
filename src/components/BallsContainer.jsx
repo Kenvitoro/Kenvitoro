@@ -20,7 +20,7 @@ export const BallsContainer = () => {
       <Ball icon={faReact} color="#5ed4f4" colorBall="#3b9fbf"/>
       <Ball icon={faNode} color="#7bc326" colorBall="#4b7f18"/>
       <Ball icon={faGitAlt} color="#f1502f" colorBall="#9d1f0e"/>
-      <Ball icon={faGithub} color="#000" colorBall="363636"/>
+      <Ball icon={faGithub} color="#000" colorBall="#FFF"/>
     </Container>
   )
 }

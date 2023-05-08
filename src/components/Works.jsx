@@ -94,14 +94,14 @@ export const Works = () => {
           <Card title={"Noaj"} 
           subTitle={"Abogacia"} 
           description={"Html, Css, Javascript, responsive desing"} 
-          image={"public/img/noaj.png"}
+          image={"./img/noaj.PNG"}
           address={"https://noajmora.web.app/"}
           />
 
           <Card title={"Just Kreate"} 
           subTitle={"Fotografia"} 
           description={"Html, Css, Javascript, responsive desing"} 
-          image={"public/img/just-kreate.png"}
+          image={"./img/just-kreate.PNG"}
           address={"https://kenvitoro.github.io/Just-Kreate/"}
           />
          
