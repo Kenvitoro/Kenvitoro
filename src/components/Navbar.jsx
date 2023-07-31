@@ -134,6 +134,9 @@ const Logo = styled.img`
 min-width: 10%;
 max-width: 100px;
 object-fit: contain;
+@media only screen and (min-width: 1024px) {
+   margin-left: 25px;
+  }
 @media only screen and (max-width: 600px) {
   padding-bottom: 80px;
 }

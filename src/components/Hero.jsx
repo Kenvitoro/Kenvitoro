@@ -34,7 +34,7 @@ export const Hero = () => {
                 <Subtitle>
                     <Line src='./img/line.png'/>
                     <Tecnologies>
-                    Desarrollador Web / Javascript / React / Css / Node 
+                    Desarrollador Web / Javascript / React / Tailwind / Node / vite
                     </Tecnologies>
                 </Subtitle>
                 

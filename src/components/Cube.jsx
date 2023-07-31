@@ -56,6 +56,9 @@ const StageCubCont = styled.div`
     position: relative;
     right: 0;
     overflow: unset;
+   @media only screen and (min-width: 1024px) {
+    margin-left: 75px;
+  }
 `
 
 const CubeSpinner = styled.div`

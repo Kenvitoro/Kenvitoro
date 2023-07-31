@@ -7,14 +7,26 @@ import { Navbar } from "./components/Navbar"
 
 const Container = styled.div`
 height: 100vh;
-scroll-snap-type: y mandatory;
 scroll-behavior: smooth;
-overflow-y: auto;
-scrollbar-width: none;
+overflow-y: auto; 
 color: white;
 background: url('/img/bg.jpeg');
+scrollbar-width: thin; 
+scrollbar-color: #4ea93b rgb(30, 0, 62);
 &::-webkit-scrollbar{
-  display: none;
+  width: 15px;
+}
+&::-webkit-scrollbar-track{
+  border-radius: 100vw;
+  background-color: rgb(30, 0, 62);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+&::-webkit-scrollbar-thumb{
+  border: 3px solid rgb(30, 0, 62);
+  background-color: #4ea93b;
+  border-radius: 100vw;
 }
 `;
 

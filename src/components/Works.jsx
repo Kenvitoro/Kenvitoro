@@ -93,17 +93,40 @@ export const Works = () => {
         <Projects>
           <Card title={"Noaj"} 
           subTitle={"Abogacia"} 
-          description={"Html, Css, Javascript, responsive desing"} 
+          description={"Html, Css, Javascript, Responsive desing, Firebase hosting"} 
           image={"./img/noaj.PNG"}
           address={"https://noajmora.web.app/"}
           />
 
-          <Card title={"Just Kreate"} 
-          subTitle={"Fotografia"} 
-          description={"Html, Css, Javascript, responsive desing"} 
-          image={"./img/just-kreate.PNG"}
-          address={"https://kenvitoro.github.io/Just-Kreate/"}
+          <Card title={"Kenvitoro"} 
+          subTitle={"Portfolio"} 
+          description={"React, Styled Components, Responsive desing, Firebase hosting"} 
+          image={"./img/Portfolio.JPG"}
+          address={"https://kenvitoroweb.web.app/"}
           />
+
+          <Card title={"Handmade Mache"} 
+          subTitle={"Pasteleria"} 
+          description={"React, Styled Components, Responsive desing, Firebase hosting"} 
+          image={"./img/mache.JPG"}
+          address={"https://handmademache.web.app/"}
+          />
+
+          <Card title={"Optimal Task"} 
+          subTitle={"Admin. de tareas"} 
+          description={"React, Tailwind, Node, JWT, TypeOrm, Postgresql, Firebase y Render hosting"} 
+          image={"./img/Optask.JPG"}
+          address={"https://optimaltask.web.app/"}
+          />
+
+          <Card title={"Tareas"} 
+          subTitle={"CRUD"} 
+          description={"Html, Css, Javascript, Node, TypeOrm, Postgresql, Firebase y railway hosting"} 
+          image={"./img/tareas.PNG"}
+          address={"https://frontend-tarea.firebaseapp.com/"}
+          />
+
+          
          
         </Projects>
 

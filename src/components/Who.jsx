@@ -19,7 +19,7 @@ export const Who = () => {
                     FullStack 
                     </Definition>
                 </Subtitle>
-                <Description>Desarrollador web con enfoque tanto en Frontend como en Backend. En el Frontend, he trabajado con JavaScript, React, CSS y SCSS para crear aplicaciones web interactivas y atractivas. En el Backend, he trabajado con Node y PostgreSQL para desarrollar aplicaciones web del lado del servidor. Estoy siempre buscando oportunidades para mejorar mis habilidades y estar al día con las últimas tendencias en el desarrollo web.</Description>
+                <Description>Desarrollador web con enfoque Frontend, he trabajado con JavaScript, React, CSS y Tailwind para crear paginas y aplicaciones web interactivas con el backend. En el area del Backend, he trabajado con Node y PostgreSQL para desarrollar aplicaciones web del lado del servidor. Estoy siempre buscando oportunidades para mejorar mis habilidades y estar al día con las últimas tendencias en el desarrollo web.</Description>
                 <BallsContainer/>
         </Right>
     </Container>
